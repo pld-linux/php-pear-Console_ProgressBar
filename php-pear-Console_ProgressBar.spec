@@ -24,7 +24,7 @@ The class allows you to display progress bars in your terminal. You can
 use this for displaying the status of downloads or other tasks that take
 some time.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Za pomoc± tej klasy mo¿liwe jest wy¶wietlanie pasków postêpów w
