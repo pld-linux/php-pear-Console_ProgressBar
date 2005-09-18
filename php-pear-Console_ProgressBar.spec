@@ -1,4 +1,5 @@
 %include	/usr/lib/rpm/macros.php
+%include	/usr/lib/rpm/macros.pear
 %define		_class		Console
 %define		_subclass	ProgressBar
 %define		_status		beta
@@ -8,13 +9,13 @@ Summary:	%{_pearname} - provides an easy-to-use interface to progress bars
 Summary(pl):	%{_pearname} - ³atwy w u¿yciu interfejs do pasków postêpu
 Name:		php-pear-%{_pearname}
 Version:	0.2
-Release:	2
+Release:	2.1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	fe75f11dd310106e6e8703a8627834bb
 URL:		http://pear.php.net/package/Console_ProgressBar/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	php-pear-build
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,18 +35,19 @@ trwaj±cych przez pewien czas.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/examples
+%doc install.log
+%doc docs/%{_pearname}/examples
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
