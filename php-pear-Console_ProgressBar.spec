@@ -8,7 +8,7 @@ Summary:	%{_pearname} - provides an easy-to-use interface to progress bars
 Summary(pl):	%{_pearname} - ³atwy w u¿yciu interfejs do pasków postêpu
 Name:		php-pear-%{_pearname}
 Version:	0.2
-Release:	2.1
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
