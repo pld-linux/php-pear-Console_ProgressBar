@@ -4,14 +4,15 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
+%define		_beta	beta
 Summary:	%{_pearname} - provides an easy-to-use interface to progress bars
 Summary(pl):	%{_pearname} - ³atwy w u¿yciu interfejs do pasków postêpu
 Name:		php-pear-%{_pearname}
 Version:	0.4.0
-Release:	1
+Release:	2.%{_beta}
 License:	PHP
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}beta.tgz
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_beta}.tgz
 # Source0-md5:	8d198422f2b70f59797f19e008916612
 URL:		http://pear.php.net/package/Console_ProgressBar/
 BuildRequires:	php-pear-PEAR
@@ -22,16 +23,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The class allows you to display progress bars in your terminal. You can
-use this for displaying the status of downloads or other tasks that take
-some time.
+The class allows you to display progress bars in your terminal. You
+can use this for displaying the status of downloads or other tasks
+that take some time.
 
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Za pomoc± tej klasy mo¿liwe jest wy¶wietlanie pasków postêpów w
-terminalu. Mo¿liwe jest wy¶wietlenie statusu ¶ci±gania b±d¼ innych zadañ
-trwaj±cych przez pewien czas.
+terminalu. Mo¿liwe jest wy¶wietlenie statusu ¶ci±gania b±d¼ innych
+zadañ trwaj±cych przez pewien czas.
 
 Ta klasa ma w PEAR status: %{_status}.
 
