@@ -6,7 +6,7 @@
 
 %define		_beta	beta
 Summary:	%{_pearname} - provides an easy-to-use interface to progress bars
-Summary(pl):	%{_pearname} - ³atwy w u¿yciu interfejs do pasków postêpu
+Summary(pl.UTF-8):   %{_pearname} - Å‚atwy w uÅ¼yciu interfejs do paskÃ³w postÄ™pu
 Name:		php-pear-%{_pearname}
 Version:	0.4.0
 Release:	2.%{_beta}
@@ -29,10 +29,10 @@ that take some time.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Za pomoc± tej klasy mo¿liwe jest wy¶wietlanie pasków postêpów w
-terminalu. Mo¿liwe jest wy¶wietlenie statusu ¶ci±gania b±d¼ innych
-zadañ trwaj±cych przez pewien czas.
+%description -l pl.UTF-8
+Za pomocÄ… tej klasy moÅ¼liwe jest wyÅ›wietlanie paskÃ³w postÄ™pÃ³w w
+terminalu. MoÅ¼liwe jest wyÅ›wietlenie statusu Å›ciÄ…gania bÄ…dÅº innych
+zadaÅ„ trwajÄ…cych przez pewien czas.
 
 Ta klasa ma w PEAR status: %{_status}.
 
