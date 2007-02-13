@@ -6,7 +6,7 @@
 
 %define		_beta	beta
 Summary:	%{_pearname} - provides an easy-to-use interface to progress bars
-Summary(pl.UTF-8):   %{_pearname} - łatwy w użyciu interfejs do pasków postępu
+Summary(pl.UTF-8):	%{_pearname} - łatwy w użyciu interfejs do pasków postępu
 Name:		php-pear-%{_pearname}
 Version:	0.4.0
 Release:	2.%{_beta}
