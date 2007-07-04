@@ -5,15 +5,16 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 %define		_beta	beta
+%define		_rel	1
 Summary:	%{_pearname} - provides an easy-to-use interface to progress bars
 Summary(pl.UTF-8):	%{_pearname} - łatwy w użyciu interfejs do pasków postępu
 Name:		php-pear-%{_pearname}
-Version:	0.4.0
-Release:	2.%{_beta}
+Version:	0.5.0
+Release:	0.%{_beta}.%{_rel}
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_beta}.tgz
-# Source0-md5:	8d198422f2b70f59797f19e008916612
+# Source0-md5:	f51a709d956f98c36827f9e462ce0764
 URL:		http://pear.php.net/package/Console_ProgressBar/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
