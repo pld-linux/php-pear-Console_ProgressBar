@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 %define		_beta	beta
-%define		_rel	1
+%define		_rel	2
 Summary:	%{_pearname} - provides an easy-to-use interface to progress bars
 Summary(pl.UTF-8):	%{_pearname} - łatwy w użyciu interfejs do pasków postępu
 Name:		php-pear-%{_pearname}
